@@ -6,10 +6,11 @@ class student
     int admno;
     char sname[20];
     float eng,math,science;
-    float total;
+    float total,avg;
     float ctotal()
     {
         total=eng+math+science;
+        avg=total/3;
         return total;
     }
     public:
@@ -30,6 +31,8 @@ class student
     void Showdata()
     {
         cout<<"Admission no.:"<<admno<<"\nStudent Name:"<<sname<<"\nEnglish:"<<eng<<"\nMath:"<<math<<"\nScience:"<<science<<"\nTotal:"<<total;
+    
+        cout<<"\naverage"<<avg;
     }
 }a;
 int main()
